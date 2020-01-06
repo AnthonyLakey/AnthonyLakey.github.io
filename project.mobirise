@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Chatzz",
-    "currentPage": "page5.html",
+    "currentPage": "page10.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -4610,7 +4610,7 @@
             "bgImage": "images/bg3.jpg",
             "parallax": true,
             "bgColorRadio": true,
-            "bgColor": "#fff",
+            "bgColor": "#0c7df9",
             "overlay": false,
             "overlayColor": "#222",
             "overlayOpacity": 0.5
