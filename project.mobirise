@@ -69,7 +69,7 @@
         "url": "https://fonts.googleapis.com/css?family=Fredoka+One:400"
       }
     ],
-    "uniqCompNum": 119,
+    "uniqCompNum": 120,
     "versionPublish": "4.11.6",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/icon-101x84.png",
@@ -554,6 +554,38 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "modalName": "Word-Of-The-Day",
+            "modalSize": "small",
+            "modalHeader": true,
+            "modalTitle": "Word Of The Day:",
+            "modalBody": "School Is Back :(",
+            "modalBodyHTML": false,
+            "modalFooter": true,
+            "modalCloseBtn": true,
+            "modalCloseText": "Exit",
+            "modalLink": false,
+            "modalLinkUrl": "https://mobirise.com/",
+            "modalLinkText": "Visit Mobirise",
+            "modalLinkNewWindow": true,
+            "modalVerticalCenter": false,
+            "modalFade": true,
+            "modalAutoOpen": true,
+            "modalAutoOpenOnce": true,
+            "modalAutoOpenGDPR": true,
+            "modalAutoOpenDelay": "1"
+          },
+          "modalTest": "<div class=\"mbr-section-btn\">\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#Word-Of-The-Day\">Preview Word-Of-The-Day</a>\n  <a href=\"#\" class=\"btn btn-primary display-4\" data-toggle=\"modal\" data-target=\"#Word-Of-The-Day-howtouse\">How to use Word-Of-The-Day</a>\n</div>\n<div class=\"modal fade\" id=\"Word-Of-The-Day-howtouse\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"Word-Of-The-Day-howtouseLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\" style=\"height:auto\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <h5 class=\"modal-title\" id=\"Word-Of-The-Day-howtouseLabel\">How to use?</h5>\n        <a href=\"\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a>\n      </div>\n      <div class=\"modal-body\">\n        Using your new modal is very easy. Simply create a new link, then click the \"...\" tab and enter the following as custom URL:<br /><br />\n        <code>javascript:OpenModal('Word-Of-The-Day')</code>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"mbr-section-btn\"><a href=\"#\" class=\"btn btn-secondary display-4\" data-dismiss=\"modal\">Close</a></div>\n      </div>\n    </div>\n  </div>\n</div>",
+          "modalBody": "School Is Back :(",
+          "alias": "witsec-modal-window",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-modal-window-block",
+          "_anchor": "witsec-modal-window-block-3b",
+          "modalWindow": "<div class=\"modal fade\" id=\"Word-Of-The-Day\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"Word-Of-The-DayLabel\" aria-hidden=\"true\">  <div class=\"modal-dialog modal-sm \" style=\"height:auto\" role=\"document\">    <div class=\"modal-content\"><div class=\"modal-header\">  <h5 class=\"no-anim modal-title\" id=\"Word-Of-The-DayLabel\">Word Of The Day:</h5>  <a href=\"#\" class=\"no-anim close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></a></div><div class=\"modal-body\" id=\"Word-Of-The-Day_body\">School Is Back :(</div><div class=\"modal-footer\"><div class=\"mbr-section-btn\"><a href=\"#\" class=\"no-anim btn btn-secondary display-4\" data-dismiss=\"modal\">Exit</a></div></div>    </div>  </div></div><script>document.addEventListener(\"DOMContentLoaded\", function() {  $(\"#Word-Of-The-Day\").on(\"hidden.bs.modal\", function () {    var html = $( \"#Word-Of-The-Day_body\" ).html();    $( \"#Word-Of-The-Day_body\" ).empty();    $( \"#Word-Of-The-Day_body\" ).append(html);  })});</script>"
         },
         {
           "_params": {
