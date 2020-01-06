@@ -72,7 +72,7 @@
     "uniqCompNum": 109,
     "versionPublish": "4.11.6",
     "screenshot": "screenshot.png",
-    "favicon": false,
+    "favicon": "@PROJECT_PATH@/assets/images/icon-101x84.png",
     "noImageResize": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -574,34 +574,6 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "footers",
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".mbr-text, blockquote": {
-              "color": "#767676"
-            },
-            "blockquote": {
-              "background-color": "@quoteBgColor",
-              "border-color": "@quoteLineColor",
-              "border-width": "(@quoteLineWidth * 1px)",
-              "margin-bottom": "0px",
-              "border-radius": "0px (@quoteBorderRadius * 1px) (@quoteBorderRadius * 1px) 0px"
-            },
-            "DIV": {
-              "color": "#ffffff"
-            }
-          },
-          "_name": "design-block",
-          "_customHTML": "<section class=\"mbr-section article\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#2e2e2e\">\n      \t<input type=\"color\" title=\"Quote Background Color\" name=\"quoteBgColor\" value=\"#2e2e2e\">\n      \t<input type=\"color\" title=\"Quote Line Color\" name=\"quoteLineColor\" value=\"#000000\">\n      \t<input type=\"range\" inline title=\"Quote Line Width\" name=\"quoteLineWidth\" min=\"0\" max=\"20\" step=\"1\" value=\"5\">\n      \t<input type=\"range\" inline title=\"Quote Border Radius\" name=\"quoteBorderRadius\" min=\"0\" max=\"50\" step=\"5\" value=\"0\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 col-md-8 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-multiline mbr-article>\n                <blockquote><p><span style=\"font-style: normal;\">Updated: January 5, 2020</span></p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "pHVjzNejZa",
-          "_anchor": "design-block-pHVjzNejZa",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
           "_params": {}
         }
       ]
