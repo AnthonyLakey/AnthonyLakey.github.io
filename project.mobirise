@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Chatzz",
-    "currentPage": "index.html",
+    "currentPage": "page10.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -69,7 +69,7 @@
         "url": "https://fonts.googleapis.com/css?family=Fredoka+One:400"
       }
     ],
-    "uniqCompNum": 134,
+    "uniqCompNum": 135,
     "versionPublish": "4.11.6",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/icon-101x84.png",
@@ -4599,6 +4599,29 @@
           "_global": true,
           "_once": "footers",
           "_params": {}
+        },
+        {
+          "_params": {
+            "HTMLCode": "<HEAD>\n<SCRIPT language=\"JavaScript\">\n<!--hide\n\nvar password;\nvar pass1=\"5821\";\n\npassword=prompt('Please enter your password to view this page!',' ');\n\nif (password==pass1)\n  alert('Password Correct! Click OK to enter!');\nelse\n   {\n    window.location=\"https://www.chatzz.cf/page8.html\";\n    }\n\n//-->\n</SCRIPT>\n</HEAD>",
+            "hideOnPublish": false,
+            "paddingTop": 2,
+            "paddingBottom": 2,
+            "bgImageRadio": false,
+            "bgImage": "images/bg3.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "HTMLCode": "<HEAD>\n<SCRIPT language=\"JavaScript\">\n<!--hide\n\nvar password;\nvar pass1=\"5821\";\n\npassword=prompt('Please enter your password to view this page!',' ');\n\nif (password==pass1)\n  alert('Password Correct! Click OK to enter!');\nelse\n   {\n    window.location=\"https://www.chatzz.cf/page8.html\";\n    }\n\n//-->\n</SCRIPT>\n</HEAD>",
+          "alias": "witsec-custom-html",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-custom-html-block",
+          "_anchor": "witsec-custom-html-block-3q"
         }
       ]
     },
