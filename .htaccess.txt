@@ -1,0 +1,8 @@
+
+Anthonylakey:NTlFb1Q4jNH9s
+
+AuthName "This page is locked. Please Login"
+AuthType Basic
+AuthUserFile /customers/f/c/9/chatzz.cf/httpd.www/page10.html/.htpasswd
+AuthGroupFile /dev/null 
+require valid-user
