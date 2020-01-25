@@ -6620,11 +6620,14 @@ section.lazy-placeholder:after {
 }
 .cid-rMJxsb9wYE {
   padding-top: 135px;
-  padding-bottom: 0px;
+  padding-bottom: 30px;
   background-color: #55b4d4;
 }
 .cid-rMJxsb9wYE P {
   color: #767676;
+}
+.cid-rMJxsb9wYE H1 {
+  text-align: right;
 }
 .cid-rODhZp49Tz {
   padding-top: 30px;
