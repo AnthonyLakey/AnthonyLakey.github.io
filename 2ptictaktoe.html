@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Site made with Mobirise Website Builder v4.11.6, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.11.6, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/icon-101x84.png" type="image/x-icon">
+  <meta name="description" content="Website Creator Description">
+  
+  <title>Tictactoe 2 player</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/facebook-plugin/style.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="menu cid-rMKDtLCT9A" once="menu" id="menu2-7u">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    
+                        <img src="assets/images/logochatzz-513x235.png" alt="Mobirise" title="" style="height: 3.8rem;">
+                    
+                </span>
+                
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+                    <a class="nav-link link text-black display-4" href="learnmore.html">
+                        Learn More 🔎
+                    </a>
+                </li><li class="nav-item"><a class="nav-link link text-black display-4" href="page15.html">
+                        Games 🎮</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link link text-black dropdown-toggle display-4" href="https://mobirise.co" data-toggle="dropdown-submenu" aria-expanded="false">Rooms</a><div class="dropdown-menu"><a class="text-black dropdown-item display-4" href="trending.html">Trending 🔥</a><a class="text-black dropdown-item display-4" href="general.html">General🌎</a><a class="text-black dropdown-item display-4" href="homework.html">Homework📝</a><a class="text-black dropdown-item display-4" href="kids.html">Kids🧒</a></div>
+                </li></ul>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary-outline display-4" href="private.html">
+                    
+                    Request A Private Room 🔑</a></div>
+        </div>
+    </nav>
+</section>
+
+<section class="engine"><a href="https://mobirise.info/c">website builder</a></section><section class="mbr-section" id="witsec-custom-html-block-7v" data-rv-view="6886" style="background-color: rgb(255, 255, 255);">
+ 
+ <div class="witsec-custom-html-container elements-content" style="padding-top: 8rem; padding-bottom: 8rem;">
+     
+    <div class="mbr-section__container block" style="width: 100%;">
+
+
+
+<form id="tictactoe">
+  <input type="radio" name="cell-0" id="cell-0-x">
+  <input type="radio" name="cell-0" id="cell-0-o">
+  <input type="radio" name="cell-1" id="cell-1-x">
+  <input type="radio" name="cell-1" id="cell-1-o">
+  <input type="radio" name="cell-2" id="cell-2-x">
+  <input type="radio" name="cell-2" id="cell-2-o">
+  <input type="radio" name="cell-3" id="cell-3-x">
+  <input type="radio" name="cell-3" id="cell-3-o">
+  <input type="radio" name="cell-4" id="cell-4-x">
+  <input type="radio" name="cell-4" id="cell-4-o">
+  <input type="radio" name="cell-5" id="cell-5-x">
+  <input type="radio" name="cell-5" id="cell-5-o">
+  <input type="radio" name="cell-6" id="cell-6-x">
+  <input type="radio" name="cell-6" id="cell-6-o">
+  <input type="radio" name="cell-7" id="cell-7-x">
+  <input type="radio" name="cell-7" id="cell-7-o">
+  <input type="radio" name="cell-8" id="cell-8-x">
+  <input type="radio" name="cell-8" id="cell-8-o">
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+  <div id="board" class="center">
+    <div class="tile" id="tile-0">
+      <label for="cell-0-x"></label>
+      <label for="cell-0-o"></label>
+      <div></div>
+    </div>
+    <div class="tile" id="tile-1">
+      <label for="cell-1-x"></label>
+      <label for="cell-1-o"></label>
+      <div></div>
+    </div>
+    <div class="tile" id="tile-2">
+      <label for="cell-2-x"></label>
+      <label for="cell-2-o"></label>
+      <div></div>
+    </div>
+    <div class="tile" id="tile-3">
+      <label for="cell-3-x"></label>
+      <label for="cell-3-o"></label>
+      <div></div>
+    </div>
+    <div class="tile" id="tile-4">
+      <label for="cell-4-x"></label>
+      <label for="cell-4-o"></label>
+      <div></div>
+    </div>
+    <div class="tile" id="tile-5">
+      <label for="cell-5-x"></label>
+      <label for="cell-5-o"></label>
+      <div></div>
+    </div>
+    <div class="tile" id="tile-6">
+      <label for="cell-6-x"></label>
+      <label for="cell-6-o"></label>
+      <div></div>
+    </div>
+    <div class="tile" id="tile-7">
+      <label for="cell-7-x"></label>
+      <label for="cell-7-o"></label>
+      <div></div>
+    </div>
+    <div class="tile" id="tile-8">
+      <label for="cell-8-x"></label>
+      <label for="cell-8-o"></label>
+      <div></div>
+    </div>
+  </div>
+  <div id="end">
+    <div id="message" class="center">
+      <div>
+        <input type="reset" for="tictactoe" value="Play again">
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Mandali|Raleway:900&display=swap');
+
+input[type="radio"] {
+  position: absolute;
+  top: -9999em;
+}
+
+html, body {
+  font-family: Mandali, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#board {
+  width: 50vmin;
+  height: 50vmin;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.tile {
+  margin: 5%;
+  position: relative;
+}
+
+.tile label,
+.tile div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.10);
+  font-family: Raleway, Courier, 'Courier New', Sans, sans-serif;
+  font-weight: bolder;
+}
+
+.tile div {
+  display: none;
+  overflow: hidden;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.85)
+}
+
+label[for$='-x'] {
+  z-index: 1;
+}
+
+input:checked ~ #board label[for$='-o'] {
+  z-index: 2;
+}
+
+input:checked ~ input:checked ~ #board label[for$='-x'] {
+  z-index: 3;
+}
+
+input:checked ~ input:checked ~ input:checked ~ #board label[for$='-o'] {
+  z-index: 4;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ #board label[for$='-x'] {
+  z-index: 5;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ #board label[for$='-o'] {
+  z-index: 6;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ #board label[for$='-x'] {
+  z-index: 7;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ #board label[for$='-o'] {
+  z-index: 8;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ #board label[for$='-x'] {
+  z-index: 9;
+}
+
+input[id*='-0-']:checked ~ #board label[for*='-0-'],
+input[id*='-1-']:checked ~ #board label[for*='-1-'],
+input[id*='-2-']:checked ~ #board label[for*='-2-'],
+input[id*='-3-']:checked ~ #board label[for*='-3-'],
+input[id*='-4-']:checked ~ #board label[for*='-4-'],
+input[id*='-5-']:checked ~ #board label[for*='-5-'],
+input[id*='-6-']:checked ~ #board label[for*='-6-'],
+input[id*='-7-']:checked ~ #board label[for*='-7-'],
+input[id*='-8-']:checked ~ #board label[for*='-8-'] {
+  display: none;
+}
+
+input[id*='-0-']:checked ~ #board #tile-0 div,
+input[id*='-1-']:checked ~ #board #tile-1 div,
+input[id*='-2-']:checked ~ #board #tile-2 div,
+input[id*='-3-']:checked ~ #board #tile-3 div,
+input[id*='-4-']:checked ~ #board #tile-4 div,
+input[id*='-5-']:checked ~ #board #tile-5 div,
+input[id*='-6-']:checked ~ #board #tile-6 div,
+input[id*='-7-']:checked ~ #board #tile-7 div,
+input[id*='-8-']:checked ~ #board #tile-8 div {
+  display: block;
+}
+
+input[id*='-0-x']:checked ~ #board #tile-0 div::before,
+input[id*='-1-x']:checked ~ #board #tile-1 div::before,
+input[id*='-2-x']:checked ~ #board #tile-2 div::before,
+input[id*='-3-x']:checked ~ #board #tile-3 div::before,
+input[id*='-4-x']:checked ~ #board #tile-4 div::before,
+input[id*='-5-x']:checked ~ #board #tile-5 div::before,
+input[id*='-6-x']:checked ~ #board #tile-6 div::before,
+input[id*='-7-x']:checked ~ #board #tile-7 div::before,
+input[id*='-8-x']:checked ~ #board #tile-8 div::before {
+  content: "X";
+  background: #004974;
+  color: #89dcf6;
+}
+
+input[id*='-0-o']:checked ~ #board #tile-0 div::before,
+input[id*='-1-o']:checked ~ #board #tile-1 div::before,
+input[id*='-2-o']:checked ~ #board #tile-2 div::before,
+input[id*='-3-o']:checked ~ #board #tile-3 div::before,
+input[id*='-4-o']:checked ~ #board #tile-4 div::before,
+input[id*='-5-o']:checked ~ #board #tile-5 div::before,
+input[id*='-6-o']:checked ~ #board #tile-6 div::before,
+input[id*='-7-o']:checked ~ #board #tile-7 div::before,
+input[id*='-8-o']:checked ~ #board #tile-8 div::before {
+  content: "O";
+  background: #a60011;
+  color: #ffc7b5;
+}
+
+.tile label:hover {
+  cursor: pointer;
+  background: rgba(0,0,0,0.25);
+}
+
+.tile label::before,
+.tile div::before {
+  color: #000;
+  position: absolute;
+  text-align:center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7.5vmin;
+  font-weight: bold;
+}
+
+.tile div::before {
+  padding: 100%;
+}
+
+.tile label[for$='-o']:hover::before {
+  content: "O";
+}
+
+.tile label[for$='-x']:hover::before {
+  content: "X";
+}
+
+#tile-0 {
+  grid-column: 1;
+  grid-row: 1;
+}
+#tile-0 label,
+#tile-0 div {
+  border-radius: 10% 0 0 0;
+}
+#tile-1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+#tile-2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+#tile-2 label,
+#tile-2 div {
+  border-radius: 0 10% 0 0;
+}
+#tile-3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+#tile-4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+#tile-5 {
+  grid-column: 3;
+  grid-row: 2;
+}
+#tile-6 {
+  grid-column: 1;
+  grid-row: 3;
+}
+#tile-6 label,
+#tile-6 div {
+  border-radius: 0 0 0 10%;
+}
+#tile-7 {
+  grid-column: 2;
+  grid-row: 3;
+}
+#tile-8 {
+  grid-column: 3;
+  grid-row: 3;
+}
+#tile-8 label,
+#tile-8 div {
+  border-radius: 0 0 10% 0;
+}
+
+#end {
+  background: rgba(255,255,255,0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+#message {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: bold;
+}
+
+#message::before {
+  content: "Tied game!"
+}
+
+#message input {
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1.75rem;
+  margin: auto auto;
+  margin-top: 2rem;
+}
+
+input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ input:checked ~ #end,
+#cell-0-x:checked ~ #cell-1-x:checked ~ #cell-2-x:checked ~ #end,
+#cell-3-x:checked ~ #cell-4-x:checked ~ #cell-5-x:checked ~ #end,
+#cell-6-x:checked ~ #cell-7-x:checked ~ #cell-8-x:checked ~ #end,
+#cell-0-x:checked ~ #cell-3-x:checked ~ #cell-6-x:checked ~ #end,
+#cell-1-x:checked ~ #cell-4-x:checked ~ #cell-7-x:checked ~ #end,
+#cell-2-x:checked ~ #cell-5-x:checked ~ #cell-8-x:checked ~ #end,
+#cell-0-x:checked ~ #cell-4-x:checked ~ #cell-8-x:checked ~ #end,
+#cell-2-x:checked ~ #cell-4-x:checked ~ #cell-6-x:checked ~ #end,
+#cell-0-o:checked ~ #cell-1-o:checked ~ #cell-2-o:checked ~ #end,
+#cell-3-o:checked ~ #cell-4-o:checked ~ #cell-5-o:checked ~ #end,
+#cell-6-o:checked ~ #cell-7-o:checked ~ #cell-8-o:checked ~ #end,
+#cell-0-o:checked ~ #cell-3-o:checked ~ #cell-6-o:checked ~ #end,
+#cell-1-o:checked ~ #cell-4-o:checked ~ #cell-7-o:checked ~ #end,
+#cell-2-o:checked ~ #cell-5-o:checked ~ #cell-8-o:checked ~ #end,
+#cell-0-o:checked ~ #cell-4-o:checked ~ #cell-8-o:checked ~ #end,
+#cell-2-o:checked ~ #cell-4-o:checked ~ #cell-6-o:checked ~ #end {
+  display: block;
+}
+
+#cell-0-x:checked ~ #cell-1-x:checked ~ #cell-2-x:checked ~ #end #message::before,
+#cell-3-x:checked ~ #cell-4-x:checked ~ #cell-5-x:checked ~ #end #message::before,
+#cell-6-x:checked ~ #cell-7-x:checked ~ #cell-8-x:checked ~ #end #message::before,
+#cell-0-x:checked ~ #cell-3-x:checked ~ #cell-6-x:checked ~ #end #message::before,
+#cell-1-x:checked ~ #cell-4-x:checked ~ #cell-7-x:checked ~ #end #message::before,
+#cell-2-x:checked ~ #cell-5-x:checked ~ #cell-8-x:checked ~ #end #message::before,
+#cell-0-x:checked ~ #cell-4-x:checked ~ #cell-8-x:checked ~ #end #message::before,
+#cell-2-x:checked ~ #cell-4-x:checked ~ #cell-6-x:checked ~ #end #message::before {
+  content: "Player 1 won!";
+}
+
+#cell-0-o:checked ~ #cell-1-o:checked ~ #cell-2-o:checked ~ #end #message::before,
+#cell-3-o:checked ~ #cell-4-o:checked ~ #cell-5-o:checked ~ #end #message::before,
+#cell-6-o:checked ~ #cell-7-o:checked ~ #cell-8-o:checked ~ #end #message::before,
+#cell-0-o:checked ~ #cell-3-o:checked ~ #cell-6-o:checked ~ #end #message::before,
+#cell-1-o:checked ~ #cell-4-o:checked ~ #cell-7-o:checked ~ #end #message::before,
+#cell-2-o:checked ~ #cell-5-o:checked ~ #cell-8-o:checked ~ #end #message::before,
+#cell-0-o:checked ~ #cell-4-o:checked ~ #cell-8-o:checked ~ #end #message::before,
+#cell-2-o:checked ~ #cell-4-o:checked ~ #cell-6-o:checked ~ #end #message::before {
+  content: "Player 2 won!";
+}
+</style></div>
+ </div>
+
+</section>
+
+<section class="mbr-section article content1 cid-rOEuq3kn0C" id="design-block-7w">
+
+    <!-- Block parameters controls (Blue "Gear" panel) -->
+     
+    <!-- End block parameters -->
+  
+ 
+  
+    
+	
+<!-- Start row red --> 
+ 
+
+
+<!-- End row red --> 
+   
+
+   
+
+  
+  
+  
+  
+  
+  
+<!-- Start light-grey --> 
+ 
+
+
+<!-- End light-grey -->  
+  
+  
+  
+  
+  
+  
+  
+  
+<!-- Start dark-blue --> 
+   
+
+
+<!-- End dark-blue -->  
+  
+  
+ 
+  
+<!-- Start row green2 --> 
+ 
+
+ 
+<!-- End row green2 -->   
+  
+   
+  
+  
+<!-- Start linea a zig zag-->
+
+<div>
+
+	<div class="rowUp">  
+	</div> 
+	  
+	  
+	<div class="row zig-zag">
+		<div>
+			<svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep1" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+			<polygon class="zig-zag" points="1488,134 1304,100 1068,152 909.935,92.044 672,198 364,142 242,32 -4,95 -4,204 1604,204 1604,0 "></polygon> 
+			<polygon class="firstColor" style="opacity: 1;" points="672,198 364,142 242,32 -4,95 -4,82.333 242,32 374,136 "></polygon> 
+			<polygon class="firstColor" style="opacity: 1;" points="894,86 672,198 909.935,92.044 "></polygon> 
+			<polygon class="secondColor" style="opacity: 1;" points="1068,152 1302,86 1486,126 1604,0 1488,134 1304,100 "></polygon>
+			</svg>
+		</div>
+	</div>
+</div>
+  
+<!-- End linea a zig zag-->   
+    
+	
+	
+	
+ 
+   
+<!-- Start grey-blue--> 
+   
+
+
+<!-- End grey-blue-->  
+  
+ 
+
+
+
+
+
+ 
+<!-- Start light-grey2-->  
+ 
+
+
+<!-- End light-grey2-->  
+  
+  
+  
+  
+  
+ 
+  
+  
+<!-- Start white-trees-->
+
+
+
+<!-- End white-trees-->
+  
+  
+ 
+  
+ 
+  
+  
+  
+<!-- Start circle-line-->
+  
+
+  
+<!-- End circle-line-->   
+  
+  
+  
+  
+  
+  
+
+  
+<!-- Start stupid-blue-->
+
+
+  
+<!-- End stupid-blue-->  
+  
+  
+  
+  
+<!-- Start dark-blue2--> 
+  
+
+
+<!-- End dark-blue2--> 
+  
+  
+  
+  
+<!-- Start v-->  
+  
+
+  
+<!-- End v--> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</section>
+
+<section class="mbr-section mbr-section__comments" id="facebook-comments-block-7x" data-rv-view="7110" style="background-color: rgb(118, 118, 118); padding-top: 6rem; padding-bottom: 0rem;">
+         
+    <div class="mbr-section__container mbr-section__container--isolated addons-container">
+        <div class="addons-row">
+            
+            
+           <div class="addons-container-inner" data-shortname="foreverpositive"><div class="disqusPlaceholder" data-numposts=""><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src="assets/images/disqus-comments.jpg"></div></div>
+        </div>
+    </div>
+</section>
+
+<section once="footers" class="cid-rOEuZGmm7i" id="footer6-7z">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2020 Chatzz - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5"></script>
+  <script src="https://apis.google.com/js/plusone.js"></script>
+  <script src="assets/facebook-plugin/facebook-script.js"></script>
+  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+<input name="cookieData" type="hidden" data-cookie-customdialogselector="null" data-cookie-colortext="#ffffff" data-cookie-colorbg="rgba(0, 0, 0, 0.99)" data-cookie-textbutton="Ok 👍" data-cookie-colorbutton="" data-cookie-colorlink="#ffffff" data-cookie-underlinelink="false" data-cookie-text="We use cookies to give you the best experience.">
+  </body>
+</html>
