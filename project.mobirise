@@ -86,7 +86,7 @@
         "url": "https://fonts.googleapis.com/css?family=Concert+One:400"
       }
     ],
-    "uniqCompNum": 240,
+    "uniqCompNum": 241,
     "versionPublish": "4.11.6",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/icon-101x84.png",
@@ -571,6 +571,29 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "HTMLCode": "<div class=\"box\">\n\t<a class=\"button\" href=\"#popup1\">This Weeks Challenge</a>\n</div>\n\n<div id=\"popup1\" class=\"overlay\">\n\t<div class=\"popup\">\n\t\t<h2>Challenge:</h2>\n\t\t<a class=\"close\" href=\"#\">&times;</a>\n\t\t<div class=\"content\">\n      Use The Word <strong>\"Wriggle\"</strong> In a Sentence!\n\t\t</div>\n\t</div>\n</div>\n\n<style>\nbody {\n  font-family: Arial, sans-serif;\n  background: transparent;\n  background-size: cover;\n  height: 100vh;\n}\n\nh1 {\n  text-align: center;\n  font-family: Tahoma, Arial, sans-serif;\n  color: #000;\n  margin: 80px 0;\n}\n\n.box {\n  width: 40%;\n  margin: 0 auto;\n  background: rgba(255,255,255,0.2);\n  padding: 35px;\n  border: 2px solid #000;\n  border-radius: 20px/50px;\n  background-clip: padding-box;\n  text-align: center;\n}\n\n.button {\n  font-size: 1em;\n  padding: 10px;\n  color: #000;\n  border: 2px solid #008000;\n  border-radius: 20px/50px;\n  text-decoration: none;\n  cursor: pointer;\n  transition: all 0.3s ease-out;\n}\n.button:hover {\n  background: #008000;\n}\n\n.overlay {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background: rgba(0, 0, 0, 0.7);\n  transition: opacity 500ms;\n  visibility: hidden;\n  opacity: 0;\n}\n.overlay:target {\n  visibility: visible;\n  opacity: 1;\n}\n\n.popup {\n  margin: 70px auto;\n  padding: 20px;\n  background: #fff;\n  border-radius: 5px;\n  width: 30%;\n  position: relative;\n  transition: all 5s ease-in-out;\n}\n\n.popup h2 {\n  margin-top: 0;\n  color: #333;\n  font-family: Tahoma, Arial, sans-serif;\n}\n.popup .close {\n  position: absolute;\n  top: 20px;\n  right: 30px;\n  transition: all 200ms;\n  font-size: 30px;\n  font-weight: bold;\n  text-decoration: none;\n  color: #333;\n}\n.popup .close:hover {\n  color: #06D85F;\n}\n.popup .content {\n  max-height: 30%;\n  overflow: auto;\n}\n\n@media screen and (max-width: 700px){\n  .box{\n    width: 70%;\n  }\n  .popup{\n    width: 70%;\n  }\n}\n</style>",
+            "hideOnPublish": false,
+            "paddingTop": 2,
+            "paddingBottom": 2,
+            "bgImageRadio": false,
+            "bgImage": "images/bg3.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#f7ed4a",
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "HTMLCode": "<div class=\"box\">\n\t<a class=\"button\" href=\"#popup1\">This Weeks Challenge</a>\n</div>\n\n<div id=\"popup1\" class=\"overlay\">\n\t<div class=\"popup\">\n\t\t<h2>Challenge:</h2>\n\t\t<a class=\"close\" href=\"#\">&times;</a>\n\t\t<div class=\"content\">\n      Use The Word <strong>\"Wriggle\"</strong> In a Sentence!\n\t\t</div>\n\t</div>\n</div>\n\n<style>\nbody {\n  font-family: Arial, sans-serif;\n  background: transparent;\n  background-size: cover;\n  height: 100vh;\n}\n\nh1 {\n  text-align: center;\n  font-family: Tahoma, Arial, sans-serif;\n  color: #000;\n  margin: 80px 0;\n}\n\n.box {\n  width: 40%;\n  margin: 0 auto;\n  background: rgba(255,255,255,0.2);\n  padding: 35px;\n  border: 2px solid #000;\n  border-radius: 20px/50px;\n  background-clip: padding-box;\n  text-align: center;\n}\n\n.button {\n  font-size: 1em;\n  padding: 10px;\n  color: #000;\n  border: 2px solid #008000;\n  border-radius: 20px/50px;\n  text-decoration: none;\n  cursor: pointer;\n  transition: all 0.3s ease-out;\n}\n.button:hover {\n  background: #008000;\n}\n\n.overlay {\n  position: fixed;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  background: rgba(0, 0, 0, 0.7);\n  transition: opacity 500ms;\n  visibility: hidden;\n  opacity: 0;\n}\n.overlay:target {\n  visibility: visible;\n  opacity: 1;\n}\n\n.popup {\n  margin: 70px auto;\n  padding: 20px;\n  background: #fff;\n  border-radius: 5px;\n  width: 30%;\n  position: relative;\n  transition: all 5s ease-in-out;\n}\n\n.popup h2 {\n  margin-top: 0;\n  color: #333;\n  font-family: Tahoma, Arial, sans-serif;\n}\n.popup .close {\n  position: absolute;\n  top: 20px;\n  right: 30px;\n  transition: all 200ms;\n  font-size: 30px;\n  font-weight: bold;\n  text-decoration: none;\n  color: #333;\n}\n.popup .close:hover {\n  color: #06D85F;\n}\n.popup .content {\n  max-height: 30%;\n  overflow: auto;\n}\n\n@media screen and (max-width: 700px){\n  .box{\n    width: 70%;\n  }\n  .popup{\n    width: 70%;\n  }\n}\n</style>",
+          "alias": "witsec-custom-html",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-custom-html-block",
+          "_anchor": "witsec-custom-html-block-6o"
         },
         {
           "_params": {
