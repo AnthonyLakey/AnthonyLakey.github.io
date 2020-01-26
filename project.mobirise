@@ -86,7 +86,7 @@
         "url": "https://fonts.googleapis.com/css?family=Concert+One:400"
       }
     ],
-    "uniqCompNum": 241,
+    "uniqCompNum": 248,
     "versionPublish": "4.11.6",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/icon-101x84.png",
@@ -573,6 +573,32 @@
           "_params": {}
         },
         {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "P": {
+              "color": "#767676"
+            }
+          },
+          "_name": "header16",
+          "_customHTML": "<section class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\" checked>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-md-10 align-center\">\n                <h1 class=\"mbr-section-title mbr-bold pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    FULL WIDTH INTRO\n                </h1>\n                <h3 class=\"mbr-section-subtitle mbr-light pb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showSubTitle\">\n                    Beautiful mobile websites\n                </h3>\n                <p class=\"mbr-text pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                    Full width intro with adjustable height, background image and a color overlay. Click any text to edit or style it.\n                </p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-black-outline\" href=\"page15.html\" data-app-placeholder=\"Type Text\">LEARN MORE</a></div>\n            </div>\n        </div>\n    </div>\n\n</section>",
+          "_cid": "rOEctzHX59",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header16-6v"
+        },
+        {
           "_params": {
             "modalName": "Update",
             "modalSize": "medium",
@@ -631,7 +657,7 @@
       "settings": {
         "meta_descr": "Web Site Generator Description",
         "title": "Password Incorrect",
-        "order": 14
+        "order": 15
       },
       "components": [
         {
@@ -701,7 +727,7 @@
       "settings": {
         "meta_descr": "*PRIVATE ROOM*",
         "title": "Angel Chatzz",
-        "order": 12
+        "order": 13
       },
       "components": [
         {
@@ -1348,7 +1374,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Kids room",
-        "order": 11
+        "order": 12
       },
       "components": [
         {
@@ -1995,7 +2021,7 @@
       "settings": {
         "meta_descr": "Homework Chatzz room",
         "title": "Homework Help",
-        "order": 10
+        "order": 11
       },
       "components": [
         {
@@ -2704,7 +2730,7 @@
       "settings": {
         "meta_descr": "General Chatzz room",
         "title": "General Room",
-        "order": 9
+        "order": 10
       },
       "components": [
         {
@@ -3431,7 +3457,7 @@
       "settings": {
         "meta_descr": "Request a private chatzz room",
         "title": "Private Rooms",
-        "order": 8
+        "order": 9
       },
       "components": [
         {
@@ -4037,7 +4063,7 @@
       "settings": {
         "meta_descr": "",
         "title": "How to create/login",
-        "order": 7
+        "order": 8
       },
       "components": [
         {
@@ -4681,7 +4707,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Trending: Sad",
-        "order": 6
+        "order": 7
       },
       "components": [
         {
@@ -5420,7 +5446,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Trending: Bored",
-        "order": 5
+        "order": 6
       },
       "components": [
         {
@@ -6159,7 +6185,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Trending: Favorite Pets",
-        "order": 4
+        "order": 5
       },
       "components": [
         {
@@ -6896,7 +6922,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Trending",
-        "order": 3
+        "order": 4
       },
       "components": [
         {
@@ -7681,7 +7707,7 @@
       "settings": {
         "meta_descr": "Learn about Chatzz",
         "title": "Learn More",
-        "order": 2
+        "order": 3
       },
       "components": [
         {
@@ -8325,7 +8351,7 @@
       "settings": {
         "meta_descr": "*PRIVATE ROOM*",
         "title": "Anthony Chatzz",
-        "order": 13
+        "order": 14
       },
       "components": [
         {
@@ -8976,7 +9002,7 @@
       "settings": {
         "meta_descr": "Web Site Creator Description",
         "title": "Down for Maintenance",
-        "order": 1
+        "order": 2
       },
       "components": [
         {
@@ -9038,6 +9064,38 @@
           "_global": true,
           "_once": "footers",
           "_params": {}
+        }
+      ]
+    },
+    "page15.html": {
+      "settings": {
+        "meta_descr": "Web Maker Description",
+        "title": "Room Deleted",
+        "order": 1
+      },
+      "components": [
+        {
+          "_params": {
+            "HTMLCode": "<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>Page Not Found :(</title>\n    </head>\n    \n    <body>\n        <div class=\"container\">\n            <div id=\"header\"> \n                <h1>Room Deleted</h1>\n                <h2>Reason: Violation</h2>\n                \n                <h3 class=\"quote\">The Owner of this room has violated our guidelines!</h3>\n                <p class=\"author\"><em>- Chatzz Team</em></p>\n            </div>\n          \n            <div class=\"warning\">            \n                <p class=\"sign alert\">Alert!</p>\n                <p>Moderators have reported your room for violation of the guidelines. All rooms including private ones are monitored!</p>\n            </div>\n\n            \n            <h4><i class=\"sign tip\">Tip: </i><strong>Please try the following:</strong></h4>\n            <ul>\n              <li>Refresh The Page</li>\n              <li>Contact Us</li>\n              <li>\n                <a href=\"https://www.chatzz.cf/\">Go Home</a></li>\n            </ul>\n            \n\n            <div id=\"footer\">            \n                <div class=\"contact\"><i class=\"sign call\">Tip: </i><p class=\"marquee\">If you think this was a mistake, please contact us immidently! </p></div>            \n                        \n                <p class=\"copyright\">&copy; 2020 Chatzz</p>\n            </div> \n        </div>     \n                        \n    </body>\n</html>\n\n<style>\n\n\n@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,200);    \n        \n            /* SELECTED TEXT */\n            ::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }\n            ::-moz-selection { background: #ff5e99; color: #FFFFFF; }\n\n            html {\n                margin-top: 80px;\n                padding: 30px 10px;\n                font-size: 20px;\n                line-height: 1;\n                -webkit-text-size-adjust: 100%;\n                -ms-text-size-adjust: 100%;\n                \n                /* BG pattern */\n                background:\n                -webkit-radial-gradient(black 15%, transparent 16%) 0 0, \n                -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px, \n                -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, \n                -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;\n                \n                background:\n                radial-gradient(black 15%, transparent 16%) 0 0,\n                radial-gradient(black 15%, transparent 16%) 8px 8px,\n                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,\n                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;\n                            \n                background-color:#282828;\n                background-size:16px 16px;\n                \n            }\n\n            html, input { font-family: \"Titillium Web\", \"Helvetica Neue\", Helvetica, Arial, sans-serif; }\n            p { margin: 16px 0; }\n            \n            body {\n                background: none repeat scroll 0 0 #982E33;\n                border-radius: 14px 14px 14px 14px;\n                border-top: 2px solid #B65156;\n                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);\n                margin: 0 auto;\n                width: 500px;\n                _width: 500px;\n                padding: 30px 10px 10px;\n            }\n              \n            body, a, a:visited, a:active {\n                color: #f1f1f1;\n                text-decoration: none;\n            }\n                   \n            ul {\n                font-size: 16px;\n                line-height: 1.4;\n                list-style: square outside none;\n                margin: 16px 24px 40px;\n                padding: 0 0 0 40px;\n            }\n\n            h1 {\n                margin:;\n                font-size: 76px;\n                text-align: center;\n                margin: 0 0 0px 0;\n                text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);\n                \n            }\n\n            h2 {\n                font-size: 50px;\n                text-align: center;\n                margin: 12px 0 0 0;\n                text-transform: uppercase;\n                line-height: 40px;\n                text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);\n            }\n\n            h3 {\n                margin: 40px 0 8px;\n                text-align: center;\n                font-size: 30px;\n                font-weight: 500;\n                line-height: 1.4;\n            }\n            \n            h4 {\n                margin: 24px 0 8px 18px;\n                text-transform: uppercase;\n            }\n            \n            .author {\n                font-size: 14px;\n                padding: 0 10px 0 0;\n                text-align: center;\n            }\n\n            .container {\n                max-width: 468px;\n                _width: 468px;\n                margin: 0 auto;\n            }\n            \n            .warning {\n                margin: 40px 0 40px 0;\n                padding: 10px 20px 16px;\n                border-top:    1px solid #999;\n\t\t\t\tborder-bottom: 1px solid #999;\n            }\n            \n            .warning .sign.alert {\n                background-image: url(\"http://simonalex.com/demo/404/redbox/404_icon_white.png\");\n                background-repeat: no-repeat;\n                background-size: 90px auto;\n                height: 64px;\n                margin-right: 20px;\n                float:left;\n                text-indent: -9999px;\n                width: 69px;\n            }            \n            \n            .warning p {\n                font-size: 16px;\n                line-height: 20px;\n            }\n                    \n            .sign.tip {\n                background-image: url(\"http://simonalex.com/demo/404/redbox/404_icon_white.png\");\n                background-position: -70px -45px;\n                background-repeat: no-repeat;\n                background-size: 90px auto;\n                float: left;\n                height: 20px;\n                margin-right: 6px;\n                text-indent: -9999px;\n                width: 20px;\n            }       \n            \n            .sign.call {\n                background-image: url(\"http://simonalex.com/demo/404/redbox/404_icon_white.png\");\n                background-position: -70px -22px;\n                background-repeat: no-repeat;\n                background-size: 90px auto;\n                float: left;\n                height: 20px;\n                margin: 15px 8px 0 0;\n                text-indent: -9999px;\n                width: 20px;\n            }  \n                       \n            .contact {\n                padding: 4px 20px;\n                background: #490a0e;\n                border-radius: 6px;\n                font-size: 12px;\n            }\n            \n            .copyright {\n                font-size: 12px;\n                text-align: center;\n            }\n \n            \n            \n            /* Glass cover */\n            body:before {         \n                background: -moz-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* FF3.6+ */\n                background: -webkit-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%,rgba(255,255,255,0.1) 40%,rgba(10,14,10,0.09) 40%,rgba(255,255,255,0.2) 90%); /* Chrome10+,Safari5.1+ */            \n                background: -o-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* Opera 11.10+ */\n                background: -ms-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* IE10+ */\n                background: linear-gradient(-220deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* W3C */\n\n                border-radius: 6px 6px 6px 6px;\n                border-top: 3px solid rgba(255, 255, 255, 0.2);\n                border-left: 1px solid rgba(255, 255, 255, 0.3);\n                border-right: 1px solid rgba(255, 255, 255, 0.2);\n                border-bottom: 1px solid rgba(255, 255, 255, 0.2);\n                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);\n                content: \" \";\n                height: 836px;\n                margin: -70px 0 0 -40px;\n                position: absolute;\n                width: 580px;\n            }                           \n                   \n            /* Cover holder */            \n              #header:before, #header:after, .copyright:before, .copyright:after {\n                    background: -moz-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* FF3.6+ */\n                    background: -webkit-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* Chrome10+,Safari5.1+ */            \n                    background: -o-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* Opera 11.10+ */\n                    background: -ms-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* IE10+ */\n                    background: linear-gradient(-220deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%);\n\n                    border: 0px solid #999999;\n                    border-radius: 10px 10px 10px 10px;\n                    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset, 0 0 3px #000000;\n                    content: \" \";\n                    display: block;\n                    height: 18px;\n                    position: absolute;\n                    width: 18px;\n                }\n                \n                #header:before {\n                    margin: -50px 0 0 -36px;\n                }\n                \n                #header:after {\n                    margin: -348px 0 0 485px;\n                }\n                \n                .copyright:before {\n                    margin: 40px 0 0 -36px;\n                }\n                .copyright:after {\n                    margin: 28px 0 0 485px;\n                } \n\n                       \n                       \n             /* Animation */          \n                    .sign.alert {\n                        -webkit-animation: blink 1s infinite;\n                        -moz-animation:    blink 1s infinite;\n                        -ms-animation:     blink 1s infinite;\n                         animation:        blink 1s infinite;\n                    }\n                    \n                    @-webkit-keyframes blink {\n                       0% { opacity: 0.1; }\n                       50% { opacity: 1; }\n                       100% { opacity: 0.1; }  \n                    }\n                    \n                    @-moz-keyframes blink {\n                       0% { opacity: 0.1; }\n                       50% { opacity: 1; }\n                       100% { opacity: 0.1; }  \n                    }\n                    \n                    @-ms-keyframes blink {\n                       0% { opacity: 0.1; }\n                       50% { opacity: 1; }\n                       100% { opacity: 0.1; }  \n                    }\n                    \n                    @keyframes blink {\n                       0% { opacity: 0.1; }\n                       50% { opacity: 1; }\n                       100% { opacity: 0.1; }            \n                    }\n\n\n            /* Marquee Animation */                    \n                    #footer, .marquee { overflow: hidden; }\n            \n                    .marquee {\n                        -webkit-animation: scroll 10s ease infinite;\n                        -moz-animation:    scroll 10s ease infinite;\n                        -ms-animation:     scroll 10s ease infinite;\n                         animation:        scroll 10s ease infinite;\n                    }\n                \n                    @-webkit-keyframes scroll {\n                        0%  { -webkit-transform:translateX(100%);opacity:0; }  \n                        10% { -webkit-transform:translateX(0);opacity:1; }  \n                        40% { -webkit-transform:translateX(0%); }  \n                        50% { -webkit-transform:translateX(0%); } \n                        90% { opacity:1;}  \n                        100% { opacity:0;}  \n                    }\n                        \n                    @-moz-keyframes scroll {\n                        0%  { -moz-transform:translateX(100%);opacity:0; }  \n                        10% { -moz-transform:translateX(0);opacity:1; }  \n                        40% { -moz-transform:translateX(0%); }  \n                        50% { -moz-transform:translateX(0%); } \n                        90% { opacity:1;}  \n                        100% { opacity:0;}  \n                    }\n                        \n                    @keyframes scroll {\n                        0%  { transform:translateX(100%);opacity:0; }  \n                        10% { transform:translateX(0);opacity:1; }  \n                        40% { transform:translateX(0%); }  \n                        50% { transform:translateX(0%); } \n                        90% { opacity:1;}  \n                        100% { opacity:0;}            \n                    }            \n\n\n\n</style>",
+            "hideOnPublish": false,
+            "paddingTop": "0",
+            "paddingBottom": "0",
+            "bgImageRadio": false,
+            "bgImage": "images/bg3.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#232323",
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "HTMLCode": "<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>Page Not Found :(</title>\n    </head>\n    \n    <body>\n        <div class=\"container\">\n            <div id=\"header\"> \n                <h1>Room Deleted</h1>\n                <h2>Reason: Violation</h2>\n                \n                <h3 class=\"quote\">The Owner of this room has violated our guidelines!</h3>\n                <p class=\"author\"><em>- Chatzz Team</em></p>\n            </div>\n          \n            <div class=\"warning\">            \n                <p class=\"sign alert\">Alert!</p>\n                <p>Moderators have reported your room for violation of the guidelines. All rooms including private ones are monitored!</p>\n            </div>\n\n            \n            <h4><i class=\"sign tip\">Tip: </i><strong>Please try the following:</strong></h4>\n            <ul>\n              <li>Refresh The Page</li>\n              <li>Contact Us</li>\n              <li>\n                <a href=\"https://www.chatzz.cf/\">Go Home</a></li>\n            </ul>\n            \n\n            <div id=\"footer\">            \n                <div class=\"contact\"><i class=\"sign call\">Tip: </i><p class=\"marquee\">If you think this was a mistake, please contact us immidently! </p></div>            \n                        \n                <p class=\"copyright\">&copy; 2020 Chatzz</p>\n            </div> \n        </div>     \n                        \n    </body>\n</html>\n\n<style>\n\n\n@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,200);    \n        \n            /* SELECTED TEXT */\n            ::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }\n            ::-moz-selection { background: #ff5e99; color: #FFFFFF; }\n\n            html {\n                margin-top: 80px;\n                padding: 30px 10px;\n                font-size: 20px;\n                line-height: 1;\n                -webkit-text-size-adjust: 100%;\n                -ms-text-size-adjust: 100%;\n                \n                /* BG pattern */\n                background:\n                -webkit-radial-gradient(black 15%, transparent 16%) 0 0, \n                -webkit-radial-gradient(black 15%, transparent 16%) 8px 8px, \n                -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, \n                -webkit-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;\n                \n                background:\n                radial-gradient(black 15%, transparent 16%) 0 0,\n                radial-gradient(black 15%, transparent 16%) 8px 8px,\n                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,\n                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;\n                            \n                background-color:#282828;\n                background-size:16px 16px;\n                \n            }\n\n            html, input { font-family: \"Titillium Web\", \"Helvetica Neue\", Helvetica, Arial, sans-serif; }\n            p { margin: 16px 0; }\n            \n            body {\n                background: none repeat scroll 0 0 #982E33;\n                border-radius: 14px 14px 14px 14px;\n                border-top: 2px solid #B65156;\n                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);\n                margin: 0 auto;\n                width: 500px;\n                _width: 500px;\n                padding: 30px 10px 10px;\n            }\n              \n            body, a, a:visited, a:active {\n                color: #f1f1f1;\n                text-decoration: none;\n            }\n                   \n            ul {\n                font-size: 16px;\n                line-height: 1.4;\n                list-style: square outside none;\n                margin: 16px 24px 40px;\n                padding: 0 0 0 40px;\n            }\n\n            h1 {\n                margin:;\n                font-size: 76px;\n                text-align: center;\n                margin: 0 0 0px 0;\n                text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);\n                \n            }\n\n            h2 {\n                font-size: 50px;\n                text-align: center;\n                margin: 12px 0 0 0;\n                text-transform: uppercase;\n                line-height: 40px;\n                text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);\n            }\n\n            h3 {\n                margin: 40px 0 8px;\n                text-align: center;\n                font-size: 30px;\n                font-weight: 500;\n                line-height: 1.4;\n            }\n            \n            h4 {\n                margin: 24px 0 8px 18px;\n                text-transform: uppercase;\n            }\n            \n            .author {\n                font-size: 14px;\n                padding: 0 10px 0 0;\n                text-align: center;\n            }\n\n            .container {\n                max-width: 468px;\n                _width: 468px;\n                margin: 0 auto;\n            }\n            \n            .warning {\n                margin: 40px 0 40px 0;\n                padding: 10px 20px 16px;\n                border-top:    1px solid #999;\n\t\t\t\tborder-bottom: 1px solid #999;\n            }\n            \n            .warning .sign.alert {\n                background-image: url(\"http://simonalex.com/demo/404/redbox/404_icon_white.png\");\n                background-repeat: no-repeat;\n                background-size: 90px auto;\n                height: 64px;\n                margin-right: 20px;\n                float:left;\n                text-indent: -9999px;\n                width: 69px;\n            }            \n            \n            .warning p {\n                font-size: 16px;\n                line-height: 20px;\n            }\n                    \n            .sign.tip {\n                background-image: url(\"http://simonalex.com/demo/404/redbox/404_icon_white.png\");\n                background-position: -70px -45px;\n                background-repeat: no-repeat;\n                background-size: 90px auto;\n                float: left;\n                height: 20px;\n                margin-right: 6px;\n                text-indent: -9999px;\n                width: 20px;\n            }       \n            \n            .sign.call {\n                background-image: url(\"http://simonalex.com/demo/404/redbox/404_icon_white.png\");\n                background-position: -70px -22px;\n                background-repeat: no-repeat;\n                background-size: 90px auto;\n                float: left;\n                height: 20px;\n                margin: 15px 8px 0 0;\n                text-indent: -9999px;\n                width: 20px;\n            }  \n                       \n            .contact {\n                padding: 4px 20px;\n                background: #490a0e;\n                border-radius: 6px;\n                font-size: 12px;\n            }\n            \n            .copyright {\n                font-size: 12px;\n                text-align: center;\n            }\n \n            \n            \n            /* Glass cover */\n            body:before {         \n                background: -moz-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* FF3.6+ */\n                background: -webkit-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%,rgba(255,255,255,0.1) 40%,rgba(10,14,10,0.09) 40%,rgba(255,255,255,0.2) 90%); /* Chrome10+,Safari5.1+ */            \n                background: -o-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* Opera 11.10+ */\n                background: -ms-linear-gradient(-40deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* IE10+ */\n                background: linear-gradient(-220deg, rgba(255,255,255,0.09) 0%, rgba(255,255,255,0.1) 40%, rgba(10,14,10,0.09) 40%, rgba(255,255,255,0.2) 90%); /* W3C */\n\n                border-radius: 6px 6px 6px 6px;\n                border-top: 3px solid rgba(255, 255, 255, 0.2);\n                border-left: 1px solid rgba(255, 255, 255, 0.3);\n                border-right: 1px solid rgba(255, 255, 255, 0.2);\n                border-bottom: 1px solid rgba(255, 255, 255, 0.2);\n                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);\n                content: \" \";\n                height: 836px;\n                margin: -70px 0 0 -40px;\n                position: absolute;\n                width: 580px;\n            }                           \n                   \n            /* Cover holder */            \n              #header:before, #header:after, .copyright:before, .copyright:after {\n                    background: -moz-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* FF3.6+ */\n                    background: -webkit-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* Chrome10+,Safari5.1+ */            \n                    background: -o-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* Opera 11.10+ */\n                    background: -ms-linear-gradient(-40deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%); /* IE10+ */\n                    background: linear-gradient(-220deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.6) 50%, #0A0E0A 50%, #FFFFFF 100%);\n\n                    border: 0px solid #999999;\n                    border-radius: 10px 10px 10px 10px;\n                    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5) inset, 0 0 3px #000000;\n                    content: \" \";\n                    display: block;\n                    height: 18px;\n                    position: absolute;\n                    width: 18px;\n                }\n                \n                #header:before {\n                    margin: -50px 0 0 -36px;\n                }\n                \n                #header:after {\n                    margin: -348px 0 0 485px;\n                }\n                \n                .copyright:before {\n                    margin: 40px 0 0 -36px;\n                }\n                .copyright:after {\n                    margin: 28px 0 0 485px;\n                } \n\n                       \n                       \n             /* Animation */          \n                    .sign.alert {\n                        -webkit-animation: blink 1s infinite;\n                        -moz-animation:    blink 1s infinite;\n                        -ms-animation:     blink 1s infinite;\n                         animation:        blink 1s infinite;\n                    }\n                    \n                    @-webkit-keyframes blink {\n                       0% { opacity: 0.1; }\n                       50% { opacity: 1; }\n                       100% { opacity: 0.1; }  \n                    }\n                    \n                    @-moz-keyframes blink {\n                       0% { opacity: 0.1; }\n                       50% { opacity: 1; }\n                       100% { opacity: 0.1; }  \n                    }\n                    \n                    @-ms-keyframes blink {\n                       0% { opacity: 0.1; }\n                       50% { opacity: 1; }\n                       100% { opacity: 0.1; }  \n                    }\n                    \n                    @keyframes blink {\n                       0% { opacity: 0.1; }\n                       50% { opacity: 1; }\n                       100% { opacity: 0.1; }            \n                    }\n\n\n            /* Marquee Animation */                    \n                    #footer, .marquee { overflow: hidden; }\n            \n                    .marquee {\n                        -webkit-animation: scroll 10s ease infinite;\n                        -moz-animation:    scroll 10s ease infinite;\n                        -ms-animation:     scroll 10s ease infinite;\n                         animation:        scroll 10s ease infinite;\n                    }\n                \n                    @-webkit-keyframes scroll {\n                        0%  { -webkit-transform:translateX(100%);opacity:0; }  \n                        10% { -webkit-transform:translateX(0);opacity:1; }  \n                        40% { -webkit-transform:translateX(0%); }  \n                        50% { -webkit-transform:translateX(0%); } \n                        90% { opacity:1;}  \n                        100% { opacity:0;}  \n                    }\n                        \n                    @-moz-keyframes scroll {\n                        0%  { -moz-transform:translateX(100%);opacity:0; }  \n                        10% { -moz-transform:translateX(0);opacity:1; }  \n                        40% { -moz-transform:translateX(0%); }  \n                        50% { -moz-transform:translateX(0%); } \n                        90% { opacity:1;}  \n                        100% { opacity:0;}  \n                    }\n                        \n                    @keyframes scroll {\n                        0%  { transform:translateX(100%);opacity:0; }  \n                        10% { transform:translateX(0);opacity:1; }  \n                        40% { transform:translateX(0%); }  \n                        50% { transform:translateX(0%); } \n                        90% { opacity:1;}  \n                        100% { opacity:0;}            \n                    }            \n\n\n\n</style>",
+          "alias": "witsec-custom-html",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-custom-html-block",
+          "_anchor": "witsec-custom-html-block-6u"
         }
       ]
     }
