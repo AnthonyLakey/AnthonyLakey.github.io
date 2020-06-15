@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Chatzz",
-    "currentPage": "games.html",
+    "currentPage": "learnmore.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -86,7 +86,7 @@
         "url": "https://fonts.googleapis.com/css?family=Concert+One:400"
       }
     ],
-    "uniqCompNum": 323,
+    "uniqCompNum": 329,
     "versionPublish": "4.11.6",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/icon-101x84.png",
@@ -631,7 +631,7 @@
       "settings": {
         "meta_descr": "Web Site Generator Description",
         "title": "Password Incorrect",
-        "order": 20
+        "order": 21
       },
       "components": [
         {
@@ -701,7 +701,7 @@
       "settings": {
         "meta_descr": "*PRIVATE ROOM*",
         "title": "Angel Chatzz",
-        "order": 18
+        "order": 19
       },
       "components": [
         {
@@ -1348,7 +1348,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Kids room",
-        "order": 17
+        "order": 18
       },
       "components": [
         {
@@ -1995,7 +1995,7 @@
       "settings": {
         "meta_descr": "Homework Chatzz room",
         "title": "Homework Help",
-        "order": 16
+        "order": 17
       },
       "components": [
         {
@@ -2704,7 +2704,7 @@
       "settings": {
         "meta_descr": "General Chatzz room",
         "title": "General Room",
-        "order": 15
+        "order": 16
       },
       "components": [
         {
@@ -3431,7 +3431,7 @@
       "settings": {
         "meta_descr": "Request a private chatzz room",
         "title": "Private Rooms",
-        "order": 14
+        "order": 15
       },
       "components": [
         {
@@ -4037,7 +4037,7 @@
       "settings": {
         "meta_descr": "",
         "title": "How to create/login",
-        "order": 13
+        "order": 14
       },
       "components": [
         {
@@ -4641,7 +4641,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Trending: Sad",
-        "order": 12
+        "order": 13
       },
       "components": [
         {
@@ -5380,7 +5380,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Trending: Bored",
-        "order": 11
+        "order": 12
       },
       "components": [
         {
@@ -6119,7 +6119,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Trending: Favorite Pets",
-        "order": 10
+        "order": 11
       },
       "components": [
         {
@@ -6856,7 +6856,7 @@
       "settings": {
         "meta_descr": "",
         "title": "Trending",
-        "order": 9
+        "order": 10
       },
       "components": [
         {
@@ -7641,7 +7641,7 @@
       "settings": {
         "meta_descr": "Learn about Chatzz",
         "title": "Learn More",
-        "order": 2
+        "order": 3
       },
       "components": [
         {
@@ -8124,6 +8124,29 @@
         },
         {
           "_params": {
+            "HTMLCode": "<HEAD>\n<SCRIPT language=\"JavaScript\">\n<!--hide\n\nvar password;\nvar pass1=\"Anthony\";\n\npassword=prompt('Please enter your password to view this page!',' ');\n\nif (password==pass1)\n  alert('Password Correct! Click OK to enter!');\nelse\n   {\n    window.location=\"http://youtube.com/techgeekshan\";\n    }\n\n//-->\n</SCRIPT>\n</HEAD>",
+            "hideOnPublish": false,
+            "paddingTop": 2,
+            "paddingBottom": 2,
+            "bgImageRadio": false,
+            "bgImage": "images/bg3.jpg",
+            "parallax": true,
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "overlay": false,
+            "overlayColor": "#222",
+            "overlayOpacity": 0.5
+          },
+          "HTMLCode": "<HEAD>\n<SCRIPT language=\"JavaScript\">\n<!--hide\n\nvar password;\nvar pass1=\"Anthony\";\n\npassword=prompt('Please enter your password to view this page!',' ');\n\nif (password==pass1)\n  alert('Password Correct! Click OK to enter!');\nelse\n   {\n    window.location=\"http://youtube.com/techgeekshan\";\n    }\n\n//-->\n</SCRIPT>\n</HEAD>",
+          "alias": "witsec-custom-html",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "witsec-custom-html-block",
+          "_anchor": "witsec-custom-html-block-94"
+        },
+        {
+          "_params": {
             "HTMLCode": "<h2>Frequently Asked Questions</h2>\n\n<div style=\"visibility: hidden; position: absolute; width: 0px; height: 0px;\">\n  <svg xmlns=\"http://www.w3.org/2000/svg\">\n    <symbol viewBox=\"0 0 24 24\" id=\"expand-more\">\n      <path d=\"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z\"></path><path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n    </symbol>\n    <symbol viewBox=\"0 0 24 24\" id=\"close\">\n      <path d=\"M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z\"></path><path d=\"M0 0h24v24H0z\" fill=\"none\"></path>\n    </symbol>\n  </svg>\n</div>\n\n<details open>\n  <summary>\n    Can Anyone See My Private Room?\n    <svg class=\"control-icon control-icon-expand\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#expand-more\" ></use></svg>\n    <svg class=\"control-icon control-icon-close\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#close\" ></use></svg>\n  </summary>\n  <p>A: NO, your private chatzz room can only be accessed through your private link that we emailed to you. <br><br>If you want to kick someone out, please notify us and we will give you a new adress link.</p>\n</details>\n\n<details>\n\n  <summary>\n    Inappropriate Comments?\n    <svg class=\"control-icon control-icon-expand\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#expand-more\" ></use></svg>\n    <svg class=\"control-icon control-icon-close\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#close\" ></use></svg>\n  </summary>\n  <p>A: You can simply flag a comment. We will see the comment and determine if the comment should be removed. Please visit our Guidelines for more info.</p>\n</details>\n\n<details>\n  <summary>\n    Can I Monitor My Childs Activity?    \n    <svg class=\"control-icon control-icon-expand\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#expand-more\" ></use></svg>\n    <svg class=\"control-icon control-icon-close\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#close\" ></use></svg>\n  </summary>\n  <p>A: YES, If you need to know your childs activity, we can send you screenshots of their chatzz. We monitor all chats 24/7 We also have the power to report/ban users. If your child gets banned, we would be more than happy to tell you why and provide factual evidence.</p>\n</details>\n<details>\n  <summary>\n    Is This Website Secure?    \n    <svg class=\"control-icon control-icon-expand\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#expand-more\" ></use></svg>\n    <svg class=\"control-icon control-icon-close\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#close\" ></use></svg>\n  </summary>\n  <p>A: YES, There is a lock symbol next to the URL link which means this website is encrypted and is safe.</p>\n</details>\n<details>\n  <summary>\n    Getting My Account Unbanned?   \n    <svg class=\"control-icon control-icon-expand\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#expand-more\" ></use></svg>\n    <svg class=\"control-icon control-icon-close\" width=\"24\" height=\"24\" role=\"presentation\"><use xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"#close\" ></use></svg>\n  </summary>\n  <p>A: Once your account is banned, you must email us and request to be unbanned. You will need to tell us a few questons such as why you violated the guidelines and other questions.</p>\n</details>\n\n<style>\nbody {\n  font-family: \"IBM Plex Sans\", sans-serif;\n  background-color: rgba(0,0,0,.1);\n}\n\nh2 {\n  margin: 20px auto 80px;\n  font-size: 38px;\n  font-weight: 300;\n  text-align: center;\n  letter-spacing: 2px;\n  line-height: 1.5;\n}\n\ndetails {\n  width: 75%;\n  min-height: 5px;\n  max-width: 700px;\n  padding: 45px 70px 45px 45px;\n  margin: 0 auto;\n  position: relative;\n  font-size: 22px;\n  border: 1px solid rgba(0,0,0,.1);\n  border-radius: 15px;\n  box-sizing: border-box;\n  transition: all .3s;\n}\n\ndetails + details {\n  margin-top: 20px;\n}\n\ndetails[open] {\n  min-height: 50px;\n  background-color: #f6f7f8;\n  box-shadow: 2px 2px 20px rgba(0,0,0,.2);\n}\n\ndetails p {\n  color: #96999d;\n  font-weight: 300;\n}\n\nsummary {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  font-weight: 500;\n  cursor: pointer;\n}\n\nsummary:focus {\n  outline: none;\n  box-shadow: 0 0 0 4px #f6f7f8, 0 0 0 5px rebeccapurple;\n}\n\nsummary::-webkit-details-marker {\n  display: none\n}\n\n.control-icon {\n  fill: rebeccapurple;\n  transition: .3s ease;\n  pointer-events: none;\n}\n\n.control-icon-close {\n  display: none;\n}\n\ndetails[open] .control-icon-close {\n  display: initial;\n  transition: .3s ease;\n}\n\ndetails[open] .control-icon-expand {\n  display: none;\n}\n\ndetails[open] summary:hover::after {\n  animation: pulse 1s ease;\n}\n\n@keyframes pulse {\n  25% {\n    transform: scale(1.1);\n  }\n  50% {\n    transform: scale(1);\n  }\n  75% {\n    transform: scale(1.1);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n</style>",
             "hideOnPublish": false,
             "paddingTop": 2,
@@ -8285,7 +8308,7 @@
       "settings": {
         "meta_descr": "*PRIVATE ROOM*",
         "title": "Anthony Chatzz",
-        "order": 19
+        "order": 20
       },
       "components": [
         {
@@ -8936,7 +8959,7 @@
       "settings": {
         "meta_descr": "Web Site Creator Description",
         "title": "Down for Maintenance",
-        "order": 21
+        "order": 22
       },
       "components": [
         {
@@ -9005,7 +9028,7 @@
       "settings": {
         "meta_descr": "Web Site Builder Description",
         "title": "Tictactoe ai",
-        "order": 4
+        "order": 5
       },
       "components": [
         {
@@ -9463,7 +9486,7 @@
       "settings": {
         "meta_descr": "Site Creator Description",
         "title": "Games",
-        "order": 3
+        "order": 4
       },
       "components": [
         {
@@ -10140,7 +10163,7 @@
       "settings": {
         "meta_descr": "Website Creator Description",
         "title": "Tictactoe 2 player",
-        "order": 5
+        "order": 6
       },
       "components": [
         {
@@ -10736,7 +10759,7 @@
       "settings": {
         "meta_descr": "Web Page Creator Description",
         "title": "Whack-a-Mole",
-        "order": 7
+        "order": 8
       },
       "components": [
         {
@@ -11217,7 +11240,7 @@
       "settings": {
         "meta_descr": "Website Builder Description",
         "title": "rockand paper",
-        "order": 6
+        "order": 7
       },
       "components": [
         {
@@ -11698,7 +11721,7 @@
       "settings": {
         "meta_descr": "Web Builder Description",
         "title": "Driving Game",
-        "order": 8
+        "order": 9
       },
       "components": [
         {
@@ -12177,7 +12200,7 @@
       "settings": {
         "meta_descr": "Site Builder Description",
         "title": "Page 21",
-        "order": 1
+        "order": 2
       },
       "components": [
         {
