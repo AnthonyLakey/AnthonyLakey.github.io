@@ -40,7 +40,8 @@
     ],
     "imageResize": true,
     "uniqCompNum": 12,
-    "versionPublish": "5.0.15"
+    "versionPublish": "5.0.15",
+    "publishChangesOnly": true
   },
   "pages": {
     "index.html": {
